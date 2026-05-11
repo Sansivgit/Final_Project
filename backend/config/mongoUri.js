@@ -1,5 +1,5 @@
 /** Default local MongoDB — database name `ecommerce`. */
-export const DEFAULT_LOCAL_MONGO_URI = "mongodb://localhost:27017/ecommerce";
+export const DEFAULT_LOCAL_MONGO_URI = "mongodb+srv://ecommerce_db:Santhosh@cluster0.ybl5wm7.mongodb.net/?appName=Cluster0";
 
 /**
  * Resolves Mongo connection string:
