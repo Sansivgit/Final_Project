@@ -5,16 +5,8 @@ services:
     buildCommand: >
       cd Frontend &&
       npm install &&
-      npm run build &&
-      rm -rf render-dist &&
-      if [ -d dist/client ]; then
-        cp -R dist/client render-dist;
-      elif [ -d .output/public ]; then
-        cp -R .output/public render-dist;
-      else
-        cp -R dist render-dist;
-      fi
-    staticPublishPath: Frontend/render-dist
+      npm run build
+    staticPublishPath: Frontend/dist
     routes:
       - type: rewrite
         source: "/*"
