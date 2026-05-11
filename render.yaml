@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: volt-admin
+    runtime: static
+    buildCommand: cd admin && npm install && npm run build
+    staticPublishPath: admin/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

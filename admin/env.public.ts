@@ -5,6 +5,7 @@ export const publicEnv = {
   VITE_API_URL: "https://volt-backend-20cc.onrender.com",
   VITE_BACKEND_ORIGIN: "https://volt-backend-20cc.onrender.com",
   VITE_ADMIN_PORT: "5174",
+  VITE_ADMIN_URL: "https://volt-admin.onrender.com",
   /** Optional: customer storefront URL for links in admin UI. */
   VITE_STORE_URL: "",
 } as const;
