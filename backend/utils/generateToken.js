@@ -7,7 +7,7 @@ function getJwtSecret() {
   if (secret) return secret;
 
   if (process.env.NODE_ENV === 'production') {
-    console.error('[auth] JWT_SECRET is missing. Set it in the deployment environment.');
+    console.error('[auth] JWT_SECRET is missing. Check backend/config/appEnv.production.ts.');
   }
   return DEV_JWT_SECRET;
 }

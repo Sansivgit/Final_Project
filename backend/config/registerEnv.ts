@@ -1,4 +1,5 @@
 import { appEnvDefaults } from "./appEnv.defaults.js";
+import { appEnvProduction } from "./appEnv.production.js";
 import type { AppEnv } from "./appEnv.types.js";
 
 function applyToProcessEnv(merged: AppEnv) {
@@ -10,7 +11,7 @@ function applyToProcessEnv(merged: AppEnv) {
   }
 }
 
-const base: AppEnv = { ...appEnvDefaults };
+const base: AppEnv = { ...appEnvDefaults, ...appEnvProduction };
 
 let local: Partial<AppEnv> = {};
 try {
