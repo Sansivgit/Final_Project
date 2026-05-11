@@ -11,5 +11,7 @@ export const appEnvDefaults: AppEnv = {
   FRONTEND_ALT_URL: "http://localhost:8080",
   ADMIN_URL: "http://localhost:5174",
   CORS_EXTRA_ORIGINS: "http://127.0.0.1:5173,http://127.0.0.1:8080",
+  /** Set a strong JWT_SECRET in Render for production. This keeps local/dev auth from crashing. */
+  JWT_SECRET: "volt-dev-jwt-secret-change-in-render",
   JWT_EXPIRES_IN: "7d",
 };

@@ -43,6 +43,9 @@ export async function apiLogin(email: string, password: string): Promise<AdminLo
   });
   const data = (await res.json().catch(() => ({}))) as AdminLoginResponse & { message?: string };
   if (!res.ok) {
+    if (data.message?.includes("secretOrPrivateKey")) {
+      throw new Error("Backend JWT_SECRET is missing. Redeploy the backend or set JWT_SECRET in Render.");
+    }
     throw new Error(data.message || "Login failed");
   }
   return data as AdminLoginResponse;

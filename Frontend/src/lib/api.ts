@@ -12,7 +12,7 @@ export function getApiBaseUrl(): string {
 function ssrBackendBase(): string {
   const fromConfig = publicEnv.VITE_BACKEND_ORIGIN?.trim().replace(/\/$/, "") || "";
   if (fromConfig) return fromConfig;
-  return "http://localhost:5000";
+  return "https://volt-backend-20cc.onrender.com";
 }
 
 function isHtmlPayload(text: string): boolean {

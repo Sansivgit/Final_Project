@@ -12,13 +12,13 @@ import { publicEnv } from "./env.public";
 export default defineConfig(() => {
   const proxyTarget =
     publicEnv.VITE_BACKEND_ORIGIN?.trim().replace(/\/$/, "") ||
-    "http://localhost:5000";
+    "https://volt-backend-20cc.onrender.com";
 
   return {
     tanstackStart: {
       server: { entry: "server" },
     },
-    /** Dev: `/api/*` → `VITE_BACKEND_ORIGIN` from `env.public.ts` (default Express :5000). */
+    /** Dev: `/api/*` -> `VITE_BACKEND_ORIGIN` from `env.public.ts`. */
     vite: {
       server: {
         proxy: {

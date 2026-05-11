@@ -15,5 +15,5 @@ export const appEnvLocal: Partial<AppEnv> = {
   // Or a full URI (encode special chars in the password yourself):
   // MONGODB_URL: "mongodb+srv://user:pass@cluster/db?retryWrites=true&w=majority",
   // JWT_SECRET: "your-secret",
-  // API_URL: "http://localhost:5000",
+  // API_URL: "https://volt-backend-20cc.onrender.com",
 };

@@ -7,7 +7,7 @@ import { publicEnv } from "./env.public";
 export default defineConfig(() => {
   const proxyTarget =
     publicEnv.VITE_BACKEND_ORIGIN?.trim().replace(/\/$/, "") ||
-    "http://localhost:5000";
+    "https://volt-backend-20cc.onrender.com";
   const port = Number(publicEnv.VITE_ADMIN_PORT || 5174) || 5174;
 
   return {

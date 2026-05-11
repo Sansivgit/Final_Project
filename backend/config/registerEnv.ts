@@ -3,7 +3,8 @@ import type { AppEnv } from "./appEnv.types.js";
 
 function applyToProcessEnv(merged: AppEnv) {
   for (const [key, val] of Object.entries(merged) as [keyof AppEnv, string | undefined][]) {
-    if (val !== undefined && val !== "") {
+    const current = process.env[String(key)];
+    if ((current === undefined || current === "") && val !== undefined && val !== "") {
       process.env[String(key)] = val;
     }
   }
