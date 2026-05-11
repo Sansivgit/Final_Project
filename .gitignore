@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment — never commit secrets
+.env
+.env.local
+.env.*.local
+backend/config/appEnv.local.ts
+
+# Build
+
+build/
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test
+coverage/
