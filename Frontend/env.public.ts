@@ -3,6 +3,7 @@
  * Safe to commit non-secret defaults; override locally as needed.
  */
 export const publicEnv = {
+  VITE_FRONTEND_URL: "https://volt-frontend-x4ed.onrender.com",
   /** Browser API base when not using same-origin `/api`. */
   VITE_API_URL: "https://volt-backend-20cc.onrender.com",
   /** Dev proxy + SSR: Express origin (no trailing slash). */

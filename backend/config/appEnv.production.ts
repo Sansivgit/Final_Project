@@ -6,6 +6,8 @@ import type { AppEnv } from "./appEnv.types.js";
  */
 export const appEnvProduction: AppEnv = {
   API_URL: "https://volt-backend-20cc.onrender.com",
+  FRONTEND_URL: "https://volt-frontend-x4ed.onrender.com",
+  FRONTEND_ALT_URL: "https://volt-frontend-x4ed.onrender.com",
   ADMIN_URL: "https://volt-admin.onrender.com",
   ADMIN_ALT_URL: "https://volt-admin.onrender.com",
   JWT_SECRET: "volt-prod-jwt-secret-ts-config-2026-change-before-public-release",
